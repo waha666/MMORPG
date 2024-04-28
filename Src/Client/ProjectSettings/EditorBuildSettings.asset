@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/Loading.unity
-    guid: 51c0c25c19759994389a397bf3689ee0
+    path: Assets/Levels/loading.unity
+    guid: 825ffc4aa48531e4b84e67867d0d05bc
   - enabled: 1
-    path: Assets/Levels/CharSelect.unity
-    guid: b5e80e7e2ea2b7d47b6cfe3e9a4319e7
+    path: Assets/Levels/charChoose.unity
+    guid: 0fcef4d353a78d64a9bb61539fd42d57
   - enabled: 1
     path: Assets/Levels/MainCity.unity
     guid: 7cfd38121ab8fe245a28b9bc0aa16750

@@ -5,6 +5,7 @@
     "Type": "Normal",
     "Class": "WARRIOR",
     "Resource": "Character/Warrior",
+    "Description": "在爱与正义的熏陶下，诞生的强大而又可靠的伙伴，拥有无与伦比的力量和强大的生命力，是团队中的中流砥柱。",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -14,8 +15,9 @@
     "Type": "Normal",
     "Class": "WIZARD",
     "Resource": "Character/Wizard",
+    "Description": "在法术和符文学习方面拥有超强的天赋，精通五行之术，上能飞天，下能遁地，驰骋战场无所不能，就是天生身板脆弱，经不起敲打…...",
     "InitLevel": 1,
-    "Speed": 300
+    "Speed": 200
   },
   "3": {
     "TID": 3,
@@ -23,8 +25,9 @@
     "Type": "Normal",
     "Class": "ARCHER",
     "Resource": "Character/Archer",
+    "Description": "传说中精灵族的绝顶高手，人送外号精灵“帧”，因为她的动作太过迅速，需要逐帧分析，并且十分擅长位移和弓箭，对潜匿也略知一二。",
     "InitLevel": 1,
-    "Speed": 300
+    "Speed": 500
   },
   "1001": {
     "TID": 1001,

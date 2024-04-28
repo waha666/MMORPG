@@ -8,9 +8,14 @@ public class SceneManager : MonoSingleton<SceneManager>
     UnityAction<float> onProgress = null;
 
     // Use this for initialization
-    protected override void OnStart()
-    {
+    //protected override void OnStart()
+    //{
         
+    //}
+
+    public SceneManager()
+    {
+        Debug.LogFormat("SceneManager > SceneManager()");
     }
 
     // Update is called once per frame
