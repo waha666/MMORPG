@@ -1,100 +1,1600 @@
-2024-04-28 16:35:39,263 [ 1] INFO  Unity: LoadingManager start
-2024-04-28 16:35:42,503 [ 1] INFO  Unity: DataManager > DataManager()
-2024-04-28 16:35:51,653 [ 1] INFO  Unity: UserLoginRequest::user :waha666 psw:123456
-2024-04-28 16:35:51,655 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-04-28 16:35:51,661 [ 1] INFO  Unity: DoConnect
-2024-04-28 16:35:51,665 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-04-28 16:35:51,668 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-04-30 23:45:02,448 [ 1] INFO  Unity: LoadingManager start
+2024-04-30 23:45:06,120 [ 1] INFO  Unity: DataManager > DataManager()
+2024-04-30 23:45:14,734 [ 1] INFO  Unity: UserLoginRequest::user :waha666 psw:123456
+2024-04-30 23:45:14,742 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-04-30 23:45:14,759 [ 1] INFO  Unity: DoConnect
+2024-04-30 23:45:14,762 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-04-30 23:45:14,786 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-04-28 16:35:51,673 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-04-28 16:35:51,783 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
-2024-04-28 16:35:51,785 [ 1] INFO  Unity: LoadLevel: charChoose
-2024-04-28 16:35:52,045 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-04-28 16:35:52,052 [ 1] INFO  Unity: Select Char:[1]牛头人[Warrior]
-2024-04-28 16:35:55,107 [ 1] INFO  Unity: Select Char:[2]法王[Wizard]
-2024-04-28 16:35:55,752 [ 1] INFO  Unity: Select Char:[3]恶灵[Archer]
-2024-04-28 16:36:01,315 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
-2024-04-28 16:36:12,495 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
-2024-04-28 16:36:55,037 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
-
-2024-04-28 16:36:55,038 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
-
-2024-04-28 16:36:55,053 [ 1] INFO  Unity: DoConnect
-2024-04-28 16:36:55,054 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-04-28 16:36:55,056 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2024-04-28 16:36:57,101 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2024-04-28 16:36:57,103 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2024-04-28 16:36:57,115 [ 1] INFO  Unity: DoConnect
-2024-04-28 16:36:57,117 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-04-28 16:36:57,119 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2024-04-28 16:36:59,161 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2024-04-28 16:36:59,162 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2024-04-28 16:36:59,184 [ 1] INFO  Unity: DoConnect
-2024-04-28 16:36:59,185 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-04-28 16:36:59,186 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2024-04-28 16:37:01,220 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2024-04-28 16:37:01,220 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2024-04-28 16:37:01,221 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2024-04-28 16:37:21,652 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-04-28 16:37:21,653 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-04-30 23:45:14,805 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-04-30 23:45:15,096 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
+2024-04-30 23:45:15,104 [ 1] INFO  Unity: LoadLevel: charChoose
+2024-04-30 23:45:15,479 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-04-30 23:45:15,486 [ 1] INFO  Unity: Select Char:[1]牛头人[Warrior]
+2024-04-30 23:45:16,878 [ 1] INFO  Unity: Select Char:[3]恶灵[Archer]
+2024-04-30 23:45:17,591 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
+2024-04-30 23:45:17,636 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-04-30 23:45:17,637 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2024-04-30 23:45:17,651 [ 1] INFO  Unity: AddCharacter:3:恶灵 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-04-30 23:45:17,657 [ 1] INFO  Unity: AddCharacter:3:恶灵 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-04-30 23:45:17,660 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-04-30 23:45:18,195 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-04-30 23:45:21,801 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.InitMap () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:29)
+UIMinimap.Start () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:18)
+}</args></log4net.Error>
+2024-04-30 23:45:28,143 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,216 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,268 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,285 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,301 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,318 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,335 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,350 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,368 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,383 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,400 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,416 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,434 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,450 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,468 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,483 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,500 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,517 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,532 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,549 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,566 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,582 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,599 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,615 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,632 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,648 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,667 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,684 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,700 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,719 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,747 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,760 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,776 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,793 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,809 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,825 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,842 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,858 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,875 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,891 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,908 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,924 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,941 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,957 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,976 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:28,991 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,008 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,024 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,040 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,057 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,074 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,090 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,107 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,160 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,176 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,194 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,215 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,232 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,249 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,267 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,289 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,306 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,322 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,338 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,356 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,372 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,388 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,405 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,422 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,439 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,454 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,473 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,487 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,505 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,521 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,538 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,556 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,571 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,587 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,604 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,621 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,637 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,654 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,671 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,687 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,703 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,719 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,737 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,753 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,770 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,786 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,803 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,820 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,835 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,853 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,868 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,887 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,903 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,920 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,937 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,953 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,970 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:29,986 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,003 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,019 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,036 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,052 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,069 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,086 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,102 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,118 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,136 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,151 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,168 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,186 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,201 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,219 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,236 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,251 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,268 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,284 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,301 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,318 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,334 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,351 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,367 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,384 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,401 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,417 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,434 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,451 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,467 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,483 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,499 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,516 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,532 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,550 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,567 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,583 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,600 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,617 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,633 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,649 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,667 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,682 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,699 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,715 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,732 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,749 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,765 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,781 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,798 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,816 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,838 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,850 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,868 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,884 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,900 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,918 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,933 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,950 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,967 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:30,984 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,001 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,017 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,034 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,064 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,081 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,098 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,114 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,131 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,147 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,163 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,180 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,197 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,213 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,230 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,247 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,263 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,280 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,296 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,313 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,329 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,346 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,363 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,379 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,395 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,411 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,454 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,471 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,487 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,503 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,521 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,537 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,553 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,570 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,587 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,603 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,619 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,636 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,653 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,669 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,687 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,702 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,719 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,735 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,752 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,768 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,785 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,802 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,819 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,836 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,852 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,868 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,884 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,902 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,918 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,935 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,951 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,967 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:31,985 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,000 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,019 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,037 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,053 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,071 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,088 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,104 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,120 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,138 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,154 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,171 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,187 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,204 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,220 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,236 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,253 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,271 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,287 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,303 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,320 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,337 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,352 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,370 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,386 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,403 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,419 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,436 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,453 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,470 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,487 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,503 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,519 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,536 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,552 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,569 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,585 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,602 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,618 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,636 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,651 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,669 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,684 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,701 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,718 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,777 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,794 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,811 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,828 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,844 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,860 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,876 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,893 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,910 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,926 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,944 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,960 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,976 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:32,993 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,009 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,025 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,042 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,061 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,077 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,094 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,112 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,127 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,144 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,161 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,177 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,193 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,210 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,227 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,243 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,259 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,277 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,293 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,311 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,327 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,343 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,360 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,376 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,393 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,408 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,426 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,446 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,461 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,479 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,496 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,511 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,529 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,544 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,561 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,578 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,594 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,611 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,627 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,644 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,661 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,681 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,698 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,714 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,732 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,748 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,764 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,780 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,798 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,815 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,830 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,847 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,863 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,881 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,897 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,913 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,930 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,947 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,963 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,980 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:33,996 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,013 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,030 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,046 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,063 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,079 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,095 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,112 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,129 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,146 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,163 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,179 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,196 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,212 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,229 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,246 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,261 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,278 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,295 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,312 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,328 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,346 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,361 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,378 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,396 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,411 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,428 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,446 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,461 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,477 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,493 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,511 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,527 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,544 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,560 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,577 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,593 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,609 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,627 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,642 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,659 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,676 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,693 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,710 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,725 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,743 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,759 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,775 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,792 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,809 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,826 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,841 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,859 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,875 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,892 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,908 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,924 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,942 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,957 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,974 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:34,991 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,008 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,025 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,041 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,058 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,073 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,091 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,106 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,123 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,141 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,157 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,173 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,189 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,206 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,223 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,239 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,256 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,273 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,290 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,306 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,323 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,339 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,356 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,372 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,389 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,405 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,423 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,439 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,455 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,472 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,489 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,506 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,521 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,538 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,556 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,571 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,587 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,605 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,621 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,638 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,654 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,671 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,687 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,703 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,721 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,737 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,753 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,770 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,787 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,804 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,819 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,837 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,854 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,870 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,888 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,904 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,921 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,938 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,953 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,971 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:35,986 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,003 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,020 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,038 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,055 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,071 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,088 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,104 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,120 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,137 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,154 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,170 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,186 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,203 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,220 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,237 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,253 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,269 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,287 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,302 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,320 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,336 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,352 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,369 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,386 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,402 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,418 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,436 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,451 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,468 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,485 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,501 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,518 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,535 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,551 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,569 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,585 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,601 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,618 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,637 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,653 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,670 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,686 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,703 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,720 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,736 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,753 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,770 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,786 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,802 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,820 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,836 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,852 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,870 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,886 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,902 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,919 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,935 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,952 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,968 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:36,985 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:37,002 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:37,018 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:37,035 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:37,055 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMinimap.Update () (at Assets/Scripts/UI/Minimap/UIMinimap.cs:37)
+}</args></log4net.Error>
+2024-04-30 23:45:37,087 [ 1] INFO  Unity: Character_3_恶灵 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-04-30 23:45:37,088 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-04-30 23:45:37,089 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
