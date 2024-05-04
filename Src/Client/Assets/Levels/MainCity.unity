@@ -32566,7 +32566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1415483396}
+      - m_Target: {fileID: 363425349}
         m_MethodName: BackToCharSelect
         m_Mode: 1
         m_Arguments:
@@ -42115,7 +42115,6 @@ GameObject:
   - component: {fileID: 1415483399}
   - component: {fileID: 1415483398}
   - component: {fileID: 1415483397}
-  - component: {fileID: 1415483396}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -42123,17 +42122,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1415483396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1415483395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6704e2f056ec984c878f047c189f449, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1415483397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42239,6 +42227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c635be0209fa5488b5b0f96ce1700f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 1
 --- !u!4 &1418655236
 Transform:
   m_ObjectHideFlags: 0

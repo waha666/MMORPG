@@ -39,11 +39,8 @@ public class UIMinimap : MonoBehaviour {
             {
                 this.playerTransform = User.Instance.CurrentCharacterObject.transform;
             }
-            else 
-            {
-                return;
-            }
         }
+        if (minimapBoundingBox == null || this.playerTransform == null) return;
         float realWidth = minimapBoundingBox.bounds.size.x;
         float realHeight = minimapBoundingBox.bounds.size.z;
 

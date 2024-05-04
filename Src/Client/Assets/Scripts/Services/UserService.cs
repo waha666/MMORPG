@@ -27,7 +27,7 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
-            //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+            MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnGameLeave);
         }
 
         public void Dispose()
@@ -36,7 +36,7 @@ namespace Services
             MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnGameEnter);
-            //MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+            MessageDistributer.Instance.Unsubscribe<UserGameLeaveResponse>(this.OnGameLeave);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
         }
@@ -221,12 +221,19 @@ namespace Services
             }
         }
 
-        //void OnMapCharacterEnter(object sender, MapCharacterEnterResponse response)
-        //{
-        //    Debug.LogFormat("OnMapCharacterEnter:{0}", response.mapId);
-        //    NCharacterInfo info = response.Characters[0];
-        //    User.Instance.CurrentCharacter = info;
-        //    SceneManager.Instance.LoadScene(DataManager.Instance.Maps[response.mapId].Resource);
-        //}
+
+        public void SendGameLeave()
+        {
+            Debug.Log("UserGameLeaveRequest");
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameLeave = new UserGameLeaveRequest();
+            NetClient.Instance.SendMessage(message);
+        }
+
+        void OnGameLeave(object sender, UserGameLeaveResponse response)
+        {
+            Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+        }
     }
 }
