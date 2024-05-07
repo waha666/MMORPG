@@ -94,7 +94,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         if (pc != null)
         {
 
-            if (character.entityId == Models.User.Instance.CurrentCharacter.Id)
+            if (character.entityId == Models.User.Instance.CurrentCharacter.Entity.Id)
             {
                 User.Instance.CurrentCharacterObject = go;
                 MainPlayerCamera.Instance.player = go;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 using Entities;
 using SkillBridge.Message;
+using Services;
 
 public class PlayerInputController : MonoBehaviour {
 
@@ -58,8 +59,8 @@ public class PlayerInputController : MonoBehaviour {
             {
                 state = SkillBridge.Message.CharacterState.Move;
                 this.character.MoveForward();
-                this.SendEntityEvent(EntityEvent.MoveFwd);
             }
+            this.SendEntityEvent(EntityEvent.MoveFwd);
             this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
         }
         else if (v < -0.01)
@@ -68,8 +69,8 @@ public class PlayerInputController : MonoBehaviour {
             {
                 state = SkillBridge.Message.CharacterState.Move;
                 this.character.MoveBack();
-                this.SendEntityEvent(EntityEvent.MoveBack);
             }
+            this.SendEntityEvent(EntityEvent.MoveBack);
             this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
         }
         else
@@ -107,6 +108,7 @@ public class PlayerInputController : MonoBehaviour {
         //Debug.LogFormat("velocity {0}", this.rb.velocity.magnitude);
     }
     Vector3 lastPos;
+    //Vector3 lastForward;
     float lastSync = 0;
     private void LateUpdate()
     {
@@ -116,7 +118,8 @@ public class PlayerInputController : MonoBehaviour {
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
         //Debug.LogFormat("LateUpdate velocity {0} : {1}", this.rb.velocity.magnitude, this.speed);
         this.lastPos = this.rb.transform.position;
-        
+        //this.lastForward = this.rb.transform.forward;
+
         if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.position).magnitude > 50)
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
@@ -125,9 +128,11 @@ public class PlayerInputController : MonoBehaviour {
         this.transform.position = this.rb.transform.position;
     }
 
+
     void SendEntityEvent(EntityEvent entityEvent)
     {
         if (entityController != null)
             entityController.OnEntityEvent(entityEvent);
+        MapService.Instance.SendMapEntitySync(entityEvent,this.character.EntityData);
     }
 }

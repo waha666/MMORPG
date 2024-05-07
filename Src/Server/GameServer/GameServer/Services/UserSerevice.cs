@@ -157,7 +157,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest: characterID:{0}:{1} Map:{2}", character.entityId, character.Info.Name, character.Info.mapId);
-            CharacterManager.Instance.RemoveCharacter(character.entityId);
+            this.CharacterLeave(character);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
@@ -168,6 +168,13 @@ namespace GameServer.Services
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
             sender.Session.Character = null;
+        }
+
+        public void CharacterLeave(Character character)
+        {
+            Log.InfoFormat("CharacterLeave： characterID:{0}:{1}", character.entityId, character.Info.Name);
+            CharacterManager.Instance.RemoveCharacter(character.entityId);
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
         }
     }
 }

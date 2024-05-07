@@ -1,5 +1,6 @@
 ﻿using Entities;
 using SkillBridge.Message;
+using System;
 using System.Collections.Generic;
 
 namespace Managers
@@ -7,9 +8,11 @@ namespace Managers
 	interface IEntityNotify
 	{
 		void OnEntityRemove();
-	}
+        void OnEntityChanged(Entity entity);
+        void OnEntityEvent(EntityEvent @entityEvent);
+    }
 
-	class EntiyManager : Singleton<EntiyManager> 
+	class EntityManager : Singleton<EntityManager> 
 	{
 		Dictionary<int, Entity> entities = new Dictionary<int, Entity>();
         Dictionary<int, IEntityNotify> notifiers = new Dictionary<int, IEntityNotify>();
@@ -36,5 +39,22 @@ namespace Managers
             }
         }
 
+        internal void OnEntitySync(NEntitySync nEntity)
+        {
+			Entity entity = null;
+			entities.TryGetValue(nEntity.Id, out entity);
+			if (entity != null) 
+			{
+				if (nEntity.Entity != null) 
+				{
+					entity.EntityData = nEntity.Entity;
+                }
+				if (notifiers.ContainsKey(nEntity.Id)) 
+				{
+					notifiers[entity.entityId].OnEntityChanged(entity);
+                    notifiers[entity.entityId].OnEntityEvent(nEntity.Event);
+                }
+			}
+        }
     }
 }

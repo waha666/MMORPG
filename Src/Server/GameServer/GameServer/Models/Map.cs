@@ -11,6 +11,7 @@ using Common.Data;
 using Network;
 using GameServer.Managers;
 using GameServer.Entities;
+using GameServer.Services;
 
 namespace GameServer.Models
 {
@@ -52,7 +53,7 @@ namespace GameServer.Models
         /// <param name="character"></param>
         internal void CharacterEnter(NetConnection<NetSession> conn, Character character)
         {
-            Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
+            Log.InfoFormat("CharacterEnter: Map:{0} characterEntityId:{1}", this.Define.ID, character.entityId);
 
             character.Info.mapId = this.ID;
 
@@ -69,7 +70,7 @@ namespace GameServer.Models
                 this.SendCharacterEnterMap(kv.Value.connection, character.Info);
             }
             
-            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+            this.MapCharacters[character.entityId] = new MapCharacter(conn, character);
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
@@ -89,33 +90,49 @@ namespace GameServer.Models
         }
 
         /// <summary>
-        /// 角色进入地图
+        /// 角色离开地图
         /// </summary>
         /// <param name="character"></param>
-        internal void CharacterLeave(NCharacterInfo character)
+        internal void CharacterLeave(Character character)
         {
-            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, character.Id);
-            if (MapCharacters.ContainsKey(character.Id));
-            {
-                MapCharacters.Remove(character.Id);
-            }
-           
+            Log.InfoFormat("CharacterLeave: Map:{0} characterEntityId:{1}", this.Define.ID, character.entityId);
             foreach (var kv in this.MapCharacters)
             {
                 this.SendCharacterLeaveMap(kv.Value.connection, character);
             }
+            if (MapCharacters.ContainsKey(character.entityId)) ;
+            {
+                MapCharacters.Remove(character.entityId);
+            }
         }
 
-        void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
 
             message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
-            message.Response.mapCharacterLeave.characterId = character.Id;
+            message.Response.mapCharacterLeave.characterId = character.entityId;
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
+        }
+
+        internal void UpdateEntity(NEntitySync entity)
+        {
+            foreach (var kv in this.MapCharacters)
+            {
+                if (kv.Value.character.entityId == entity.Entity.Id)
+                {
+                    kv.Value.character.Position = entity.Entity.Position;
+                    kv.Value.character.Direction = entity.Entity.Direction;
+                    kv.Value.character.Speed = entity.Entity.Speed;
+                }
+                else
+                {
+                    MapService.Instance.SendEntityUpdate(kv.Value.connection, entity);
+                }
+            }
         }
     }
 }
