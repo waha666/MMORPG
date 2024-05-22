@@ -1,61 +1,60 @@
-2024-05-08 01:46:06,856 [ 1] INFO  Unity: LoadingManager start
-2024-05-08 01:46:06,865 [ 1] WARN  Unity: SceneManager[38588] Start
+2024-05-22 13:30:24,339 [ 1] INFO  Unity: LoadingManager start
+2024-05-22 13:30:24,363 [ 1] WARN  Unity: SceneManager[25510] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-08 01:46:09,937 [ 1] INFO  Unity: DataManager > DataManager()
-2024-05-08 01:46:18,648 [ 1] INFO  Unity: UserLoginRequest::user :waha666 psw:123456
-2024-05-08 01:46:18,650 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-05-08 01:46:18,656 [ 1] INFO  Unity: DoConnect
-2024-05-08 01:46:18,659 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-05-08 01:46:18,664 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-05-22 13:30:27,968 [ 1] INFO  Unity: DataManager > DataManager()
+2024-05-22 13:30:43,079 [ 1] INFO  Unity: UserLoginRequest::user :waha666 psw:123456
+2024-05-22 13:30:43,089 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-05-22 13:30:43,106 [ 1] INFO  Unity: DoConnect
+2024-05-22 13:30:43,108 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-05-22 13:30:43,130 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-05-08 01:46:18,672 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-05-08 01:46:19,715 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
-2024-05-08 01:46:19,716 [ 1] INFO  Unity: LoadLevel: charChoose
-2024-05-08 01:46:20,059 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-05-08 01:46:20,066 [ 1] INFO  Unity: Select Char:[1]牛头人[Warrior]
-2024-05-08 01:46:20,954 [ 1] INFO  Unity: Select Char:[2]法王[Wizard]
-2024-05-08 01:46:22,070 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
-2024-05-08 01:46:22,107 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-05-08 01:46:22,108 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-05-08 01:46:22,110 [ 1] INFO  Unity: AddCharacter:2:法王 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-05-08 01:46:22,114 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-05-08 01:46:22,657 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-05-08 01:46:22,658 [ 1] WARN  Unity: MainPlayerCamera[77896] Start
+2024-05-22 13:30:43,147 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-05-22 13:30:43,480 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
+2024-05-22 13:30:43,486 [ 1] INFO  Unity: LoadLevel: charChoose
+2024-05-22 13:30:43,821 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-05-22 13:30:43,829 [ 1] INFO  Unity: Select Char:[1]lili[Archer]
+2024-05-22 13:30:45,328 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-05-22 13:30:45,379 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-05-22 13:30:45,391 [ 1] INFO  Unity: ItemManager:Init[ID:1,Count2800]
+2024-05-22 13:30:45,392 [ 1] INFO  Unity: ItemManager:Init[ID:2,Count1400]
+2024-05-22 13:30:45,392 [ 1] INFO  Unity: ItemManager:Init[ID:3,Count420]
+2024-05-22 13:30:45,393 [ 1] INFO  Unity: ItemManager:Init[ID:4,Count1680]
+2024-05-22 13:31:02,751 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at Managers.BagManager.Reset () [0x00096] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Managers\BagManager.cs:44 
+  at Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) [0x00070] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Managers\BagManager.cs:25 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00064] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:222 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
+2024-05-22 13:31:02,754 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., Managers.BagManager.Reset () (at Assets/Scripts/Managers/BagManager.cs:44)
+Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) (at Assets/Scripts/Managers/BagManager.cs:25)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:222)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+}</args></log4net.Error>
+2024-05-22 13:31:02,815 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-05-22 13:31:02,824 [ 1] INFO  Unity: AddCharacter:1:lili Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-05-22 13:31:02,837 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-05-22 13:31:03,510 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-05-22 13:31:03,532 [ 1] WARN  Unity: MainPlayerCamera[101676] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-08 01:46:22,659 [ 1] WARN  Unity: UIWorldElementManager[78644] Start
+2024-05-22 13:31:03,539 [ 1] WARN  Unity: UIWorldElementManager[102432] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-08 01:46:22,660 [ 1] WARN  Unity: GameObjectManager[79234] Start
+2024-05-22 13:31:03,540 [ 1] WARN  Unity: UIMain[103042] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-08 01:46:25,087 [ 1] INFO  Unity: MoveForward
-2024-05-08 01:46:25,915 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2024-05-08 01:46:26,014 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
-2024-05-08 01:46:26,097 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
-2024-05-08 01:46:26,180 [ 1] INFO  Unity: Stop
-2024-05-08 01:46:26,197 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
-2024-05-08 01:46:26,279 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
-2024-05-08 01:46:26,362 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
-2024-05-08 01:46:26,463 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
-2024-05-08 01:46:26,544 [ 1] INFO  Unity: SetDirection:(10, -100, 0)
-2024-05-08 01:46:26,677 [ 1] INFO  Unity: SetDirection:(-8, -100, 0)
-2024-05-08 01:46:27,886 [ 1] INFO  Unity: MoveForward
-2024-05-08 01:46:30,140 [ 1] INFO  Unity: SetPosition:(5181, 3529, 805)
-2024-05-08 01:46:31,100 [ 1] INFO  Unity: SetDirection:(11, -99, 0)
-2024-05-08 01:46:31,465 [ 1] INFO  Unity: Stop
-2024-05-08 01:46:32,988 [ 1] INFO  Unity: MoveForward
-2024-05-08 01:46:34,133 [ 1] INFO  Unity: SetPosition:(5199, 3038, 805)
-2024-05-08 01:46:34,827 [ 1] INFO  Unity: Stop
-2024-05-08 01:47:09,843 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-05-08 01:47:09,844 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-05-22 13:31:03,541 [ 1] WARN  Unity: GameObjectManager[103054] Start
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-05-22 13:38:38,662 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-05-22 13:38:38,662 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2024-05-08 01:47:09,847 [ 1] INFO  Unity: Character_1_法王 OnDestroy :ID:1 POS:(5199, 2912, 805) DIR:(11, -99, 0) SPD:0 
+2024-05-22 13:38:38,673 [ 1] INFO  Unity: Character_6_lili OnDestroy :ID:6 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

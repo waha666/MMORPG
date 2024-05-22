@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Models;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,7 @@ namespace Managers
 	{
 		Dictionary<int, Entity> entities = new Dictionary<int, Entity>();
         Dictionary<int, IEntityNotify> notifiers = new Dictionary<int, IEntityNotify>();
-
-		public void RegisterEntityChangeNotify(int entityId, IEntityNotify notify) 
+        public void RegisterEntityChangeNotify(int entityId, IEntityNotify notify) 
 		{
 			this.notifiers[entityId] = notify;
         }

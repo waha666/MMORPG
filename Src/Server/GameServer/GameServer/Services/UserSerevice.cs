@@ -112,8 +112,11 @@ namespace GameServer.Services
                 MapPosY = 4000,
                 MapPosZ = 820,
             };
-
-
+            var bag = new TCharacterBag();
+            bag.Owner = character;
+            bag.Items = new byte[0];
+            bag.Unlocked = 20;
+            character.Bag = bag;
             DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
@@ -146,11 +149,18 @@ namespace GameServer.Services
             message.Response.gameEnter = new UserGameEnterResponse();
             message.Response.gameEnter.Result = Result.Success;
             message.Response.gameEnter.Errormsg = "None";
+            message.Response.gameEnter.Character = character.Info;
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
             sender.Session.Character = character;
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
+
+            character.ItemManager.AddItem(1, 200);
+            character.ItemManager.AddItem(2, 100);
+            character.ItemManager.AddItem(3, 30);
+            character.ItemManager.AddItem(4, 120);
+            DBService.Instance.Save();
         }
 
         void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)

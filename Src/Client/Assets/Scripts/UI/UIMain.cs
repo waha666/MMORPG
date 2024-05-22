@@ -5,16 +5,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMainCity : MonoBehaviour {
+public class UIMain : MonoSingleton<UIMain> {
 
     public Text avatarName;
     public Text avatarLevel;
 
-	// Use this for initialization
-	void Start () {
+    protected override void OnStart()
+    {
         this.UpdateAvatar();
-
-	}
+    }
 
     void UpdateAvatar()
     {
@@ -31,5 +30,15 @@ public class UIMainCity : MonoBehaviour {
     {
         SceneManager.Instance.LoadScene("charChoose");
         UserService.Instance.SendGameLeave();
+    }
+
+    public void OnClickTest() 
+    {
+        UIManager.Instance.Show<UITest>();
+    }
+
+    public void OnClickBag()
+    {
+        UIManager.Instance.Show<UIBag>();
     }
 }

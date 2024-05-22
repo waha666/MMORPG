@@ -15,8 +15,6 @@ namespace Managers
     class CharacterManager : Singleton<CharacterManager>, IDisposable
     {
         public Dictionary<int, Character> Characters = new Dictionary<int, Character>();
-
-
         public UnityAction<Character> OnCharacterEnter;
         public UnityAction<Character> OnCharacterLeave;
 

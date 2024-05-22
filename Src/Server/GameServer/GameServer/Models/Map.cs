@@ -100,7 +100,7 @@ namespace GameServer.Models
             {
                 this.SendCharacterLeaveMap(kv.Value.connection, character);
             }
-            if (MapCharacters.ContainsKey(character.entityId)) ;
+            if (MapCharacters.ContainsKey(character.entityId))
             {
                 MapCharacters.Remove(character.entityId);
             }
