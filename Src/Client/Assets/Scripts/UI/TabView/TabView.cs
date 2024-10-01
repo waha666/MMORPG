@@ -1,14 +1,17 @@
-﻿using System;
+﻿using Entities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class TabView : MonoBehaviour {
 	public TabButton[] tabButtons;
 	public GameObject[] tabPages;
+    public UnityAction<int> OnTabSelect;
 
-	public int index = -1;
+    public int index = -1;
 
 	IEnumerator Start() 
 	{
@@ -31,6 +34,8 @@ public class TabView : MonoBehaviour {
                 tabButtons[i].Select(i == index);
                 tabPages[i].SetActive(i == index);
             }
+			if (this.OnTabSelect != null) this.OnTabSelect(index);
+
 
         }
     }

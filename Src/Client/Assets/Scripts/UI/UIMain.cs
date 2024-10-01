@@ -41,4 +41,14 @@ public class UIMain : MonoSingleton<UIMain> {
     {
         UIManager.Instance.Show<UIBag>();
     }
+
+    public void OnClickCharEquip()
+    {
+        UIManager.Instance.Show<UICharEquip>();
+    }
+
+    public void OnClickQuest()
+    {
+        UIManager.Instance.Show<UIQuestSystem>();
+    }
 }

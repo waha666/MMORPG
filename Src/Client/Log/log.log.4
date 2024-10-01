@@ -1,60 +1,78 @@
-2024-05-22 13:30:24,339 [ 1] INFO  Unity: LoadingManager start
-2024-05-22 13:30:24,363 [ 1] WARN  Unity: SceneManager[25510] Start
+2024-10-01 23:18:08,561 [ 1] INFO  Unity: LoadingManager start
+2024-10-01 23:18:08,582 [ 1] WARN  Unity: SceneManager[189932] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-22 13:30:27,968 [ 1] INFO  Unity: DataManager > DataManager()
-2024-05-22 13:30:43,079 [ 1] INFO  Unity: UserLoginRequest::user :waha666 psw:123456
-2024-05-22 13:30:43,089 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-05-22 13:30:43,106 [ 1] INFO  Unity: DoConnect
-2024-05-22 13:30:43,108 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-05-22 13:30:43,130 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2024-05-22 13:30:43,147 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-05-22 13:30:43,480 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
-2024-05-22 13:30:43,486 [ 1] INFO  Unity: LoadLevel: charChoose
-2024-05-22 13:30:43,821 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-05-22 13:30:43,829 [ 1] INFO  Unity: Select Char:[1]lili[Archer]
-2024-05-22 13:30:45,328 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-05-22 13:30:45,379 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-05-22 13:30:45,391 [ 1] INFO  Unity: ItemManager:Init[ID:1,Count2800]
-2024-05-22 13:30:45,392 [ 1] INFO  Unity: ItemManager:Init[ID:2,Count1400]
-2024-05-22 13:30:45,392 [ 1] INFO  Unity: ItemManager:Init[ID:3,Count420]
-2024-05-22 13:30:45,393 [ 1] INFO  Unity: ItemManager:Init[ID:4,Count1680]
-2024-05-22 13:31:02,751 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at Managers.BagManager.Reset () [0x00096] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Managers\BagManager.cs:44 
-  at Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) [0x00070] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Managers\BagManager.cs:25 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00064] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:222 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2024-05-22 13:31:02,754 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{IndexOutOfRangeException: Array index is out of range., Managers.BagManager.Reset () (at Assets/Scripts/Managers/BagManager.cs:44)
-Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) (at Assets/Scripts/Managers/BagManager.cs:25)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:222)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+2024-10-01 23:18:17,286 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:35)
+TabView+<Start>c__Iterator0.MoveNext () (at Assets/Scripts/UI/TabView/TabView.cs:24)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
 }</args></log4net.Error>
-2024-05-22 13:31:02,815 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-05-22 13:31:02,824 [ 1] INFO  Unity: AddCharacter:1:lili Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-05-22 13:31:02,837 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-05-22 13:31:03,510 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-05-22 13:31:03,532 [ 1] WARN  Unity: MainPlayerCamera[101676] Start
+2024-10-01 23:18:20,491 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-01 23:18:53,180 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:123
+2024-10-01 23:18:53,189 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-01 23:18:53,203 [ 1] INFO  Unity: DoConnect
+2024-10-01 23:18:53,204 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-01 23:18:53,218 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-10-01 23:18:53,231 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-01 23:18:54,066 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
+2024-10-01 23:18:54,072 [ 1] INFO  Unity: LoadLevel: charChoose
+2024-10-01 23:18:54,320 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 23:18:54,326 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 23:18:59,432 [ 1] INFO  Unity: SendCharacterCreate::charName :ddd charClass:Wizard
+2024-10-01 23:18:59,503 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2024-10-01 23:18:59,507 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 23:19:00,576 [ 1] INFO  Unity: Select Char:[5]ddd[Wizard]
+2024-10-01 23:19:00,841 [ 1] INFO  Unity: Select Char:[5]ddd[Wizard]
+2024-10-01 23:19:01,404 [ 1] INFO  Unity: UserGameEnterRequest::characterId :4
+2024-10-01 23:19:01,453 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-01 23:19:01,488 [ 1] INFO  Unity: =========Quests:1001 Quest
+2024-10-01 23:19:01,496 [ 1] INFO  Unity: =========Quests:3001 Quest
+2024-10-01 23:19:01,497 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-01 23:19:01,507 [ 1] INFO  Unity: AddCharacter:5:ddd Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-10-01 23:19:01,522 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-01 23:19:02,174 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 23:19:08,397 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
+}</args></log4net.Error>
+2024-10-01 23:19:52,279 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
+}</args></log4net.Error>
+2024-10-01 23:19:53,269 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
+}</args></log4net.Error>
+2024-10-01 23:19:54,139 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
+}</args></log4net.Error>
+2024-10-01 23:19:54,148 [ 1] WARN  Unity: MainPlayerCamera[199884] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-22 13:31:03,539 [ 1] WARN  Unity: UIWorldElementManager[102432] Start
+2024-10-01 23:19:54,151 [ 1] WARN  Unity: UIWorldElementManager[200640] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-22 13:31:03,540 [ 1] WARN  Unity: UIMain[103042] Start
+2024-10-01 23:19:54,152 [ 1] WARN  Unity: UIMain[201250] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-22 13:31:03,541 [ 1] WARN  Unity: GameObjectManager[103054] Start
+2024-10-01 23:19:54,152 [ 1] WARN  Unity: GameObjectManager[201262] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-22 13:38:38,662 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-05-22 13:38:38,662 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-01 23:20:11,770 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-01 23:20:11,771 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2024-05-22 13:38:38,673 [ 1] INFO  Unity: Character_6_lili OnDestroy :ID:6 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-10-01 23:20:11,779 [ 1] INFO  Unity: Character_1_ddd OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

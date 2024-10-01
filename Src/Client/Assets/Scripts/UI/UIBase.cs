@@ -33,4 +33,8 @@ public class UIBase : MonoBehaviour {
         this.Close(BaseResult.Yes);
     }
 
+    public virtual void OnNoClick()
+    {
+        this.Close(BaseResult.No);
+    }
 }

@@ -8,15 +8,21 @@ public class Item {
 
     public int ItemID;
     public int Count;
-
     public ItemDefine Define;
+    public EquipDefine EquipInfo;
     // Use this for initialization
-    public Item(NItemInfo item)
+    public Item(NItemInfo item) :
+        this(item.Id, item.Count)
+    { 
+    }
+    
+    public Item(int id,int count)
     {
 
-        this.ItemID = (short)item.Id;
-        this.Count = (short)item.Count;
-        this.Define = DataManager.Instance.Items[this.ItemID];
+        this.ItemID = id;
+        this.Count = count;
+        DataManager.Instance.Items.TryGetValue(this.ItemID, out this.Define);
+        DataManager.Instance.Equips.TryGetValue(this.ItemID, out this.EquipInfo);
     }
 
     public override string ToString()

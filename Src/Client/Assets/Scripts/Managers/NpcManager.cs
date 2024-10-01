@@ -11,7 +11,7 @@ namespace Managers
     {
         public delegate bool NpcActionHandler(NpcDefine npc);
         Dictionary<NpcFunction, NpcActionHandler> eventMap = new Dictionary<NpcFunction, NpcActionHandler>();
-        public BagItem[] Items;
+        //public BagItem[] Items;
 
         public void RegisterNpcEvent(NpcFunction function, NpcActionHandler action)
         {
@@ -42,9 +42,9 @@ namespace Managers
 
         public bool Interactive(NpcDefine npc)
         {
-            if (npc.Type == NpcType.Task)
+            if (DoTaskInteractive(npc))
             {
-                return DoTaskInteractive(npc);
+                return true;
             }
             else if(npc.Type == NpcType.Functional)
             {
@@ -56,8 +56,10 @@ namespace Managers
    
         private bool DoTaskInteractive(NpcDefine npc)
         {
-            MessageBox.Show("点击了NPC：" + npc.Name, "NPC对话");
-            return true;
+            var status = QuestManager.Instance.GetNpcQuestStatusByNpc(npc.ID);
+            if (status == NpcQuestStatus.None)
+                return false;
+            return QuestManager.Instance.OpenNpcQuest(npc.ID);
         }
 
         private bool DoFunctionInteractive(NpcDefine npc)

@@ -22,6 +22,7 @@ public class UIBag : UIBase
 				slots.AddRange(this.pages[pageIndex].GetComponentsInChildren<Image>(true));
             }
 			StartCoroutine(InitBags());
+			this.SetTitle();
         }
 	}
 
@@ -35,7 +36,7 @@ public class UIBag : UIBase
 				GameObject go = Instantiate(bagItem, slots[i].transform);
 				var ui = go.GetComponent<UIIconItem>();
 				var def = ItemManager.Instance.Items[item.ItemId].Define;
-				ui.SetMainIcon(def.Icom, item.Count.ToString());
+				ui.SetMainIcon(def.Icon, item.Count.ToString());
 			}
 		}
 		for (int i = BagManager.Instance.Items.Length; i < slots.Count; i++) 
@@ -55,7 +56,7 @@ public class UIBag : UIBase
                 GameObject go = Instantiate(bagItem, slots[i].transform);
                 var ui = go.GetComponent<UIIconItem>();
                 var def = ItemManager.Instance.Items[item.ItemId].Define;
-                ui.SetMainIcon(def.Icom, item.Count.ToString());
+                ui.SetMainIcon(def.Icon, item.Count.ToString());
             }
         }
         for (int i = BagManager.Instance.Items.Length; i < slots.Count; i++)
@@ -65,9 +66,9 @@ public class UIBag : UIBase
         yield return null;
     }
 
-    public void SetTitle(string sitle) 
+    public void SetTitle() 
 	{
-		this.money.text = User.Instance.CurrentCharacter.Id.ToString();
+		this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
 	}
 
 	public void OnReset() 

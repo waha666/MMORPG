@@ -9,19 +9,41 @@ public class NpcContoller : MonoBehaviour {
 
 	public int npcID;
     Animator anim;
-	SkinnedMeshRenderer renderer;
+	SkinnedMeshRenderer npcRenderer;
 	Color orignColor;
 
 	NpcDefine npcDefine;
     private bool inInteractive;
 
+	NpcQuestStatus questStatus;
+
     // Use this for initialization
     void Start () {
 		anim = this.GetComponent<Animator>();
 		npcDefine = NpcManager.Instance.GetNpcDefine(npcID);
-		renderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
-		orignColor = renderer.sharedMaterial.color;
+        npcRenderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+		orignColor = npcRenderer.sharedMaterial.color;
 		this.StartCoroutine(Actions());
+
+		this.RefreshNpcStatus();
+		QuestManager.Instance.onQuestStatusChanged += onQuestStatusChanged;
+    }
+
+    private void RefreshNpcStatus()
+    {
+		this.questStatus = QuestManager.Instance.GetNpcQuestStatusByNpc(this.npcID);
+		UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);
+    }
+
+	void onDestroy() 
+	{
+        QuestManager.Instance.onQuestStatusChanged -= onQuestStatusChanged;
+		if (UIWorldElementManager.Instance != null) UIWorldElementManager.Instance.RemoveNpcQuestStatus(this.transform);
+    }
+
+    private void onQuestStatusChanged(Quest quest)
+    {
+        this.RefreshNpcStatus();
     }
 
     IEnumerator Actions()
@@ -104,16 +126,16 @@ public class NpcContoller : MonoBehaviour {
     {
 		if (highlight)
 		{
-			if (renderer.sharedMaterial.color != Color.white) 
+			if (npcRenderer.sharedMaterial.color != Color.white) 
 			{
-				renderer.sharedMaterial.color = Color.white;
+                npcRenderer.sharedMaterial.color = Color.white;
             }
 		}
 		else 
 		{
-            if (renderer.sharedMaterial.color != orignColor)
+            if (npcRenderer.sharedMaterial.color != orignColor)
             {
-                renderer.sharedMaterial.color = orignColor;
+                npcRenderer.sharedMaterial.color = orignColor;
             }
         }
     }

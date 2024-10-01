@@ -218,8 +218,11 @@ namespace Services
 
             if (response.Result == Result.Success && response.Character != null)
             {
+                User.Instance.CurrentCharacter = response.Character;
                 ItemManager.Instance.Init(response.Character.Items);
                 BagManager.Instance.Init(response.Character.Bag);
+                EquipManager.Instance.Init(response.Character.Equips);
+                QuestManager.Instance.Init(response.Character.Quests);
             }
         }
 

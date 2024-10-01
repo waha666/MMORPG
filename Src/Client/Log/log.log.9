@@ -1,61 +1,245 @@
-2024-05-22 13:16:18,821 [ 1] INFO  Unity: LoadingManager start
-2024-05-22 13:16:18,830 [ 1] WARN  Unity: SceneManager[25510] Start
+2024-10-01 22:23:56,940 [ 1] INFO  Unity: LoadingManager start
+2024-10-01 22:23:56,964 [ 1] WARN  Unity: SceneManager[6580] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-05-22 13:16:21,910 [ 1] INFO  Unity: DataManager > DataManager()
-2024-05-22 13:16:29,177 [ 1] INFO  Unity: UserLoginRequest::user :waha666 psw:123456
-2024-05-22 13:16:29,179 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-05-22 13:16:29,184 [ 1] INFO  Unity: DoConnect
-2024-05-22 13:16:29,186 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-05-22 13:16:29,189 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-10-01 22:24:00,276 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-01 22:24:08,004 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:123
+2024-10-01 22:24:08,011 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-01 22:24:08,027 [ 1] INFO  Unity: DoConnect
+2024-10-01 22:24:08,029 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-01 22:24:08,041 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-05-22 13:16:29,193 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-05-22 13:16:29,801 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
-2024-05-22 13:16:29,801 [ 1] INFO  Unity: LoadLevel: charChoose
-2024-05-22 13:16:30,049 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-05-22 13:16:30,052 [ 1] INFO  Unity: Select Char:[1]lili[Archer]
-2024-05-22 13:16:31,226 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-05-22 13:16:31,313 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-05-22 13:16:31,316 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Item..ctor (SkillBridge.Message.NItemInfo item) [0x00032] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Models\Item.cs:19 
-  at ItemManager.Init (System.Collections.Generic.List`1 items) [0x00023] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Managers\ItemManager.cs:15 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x0004f] in D:\MMO\myMMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:221 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2024-05-22 13:16:31,317 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Item..ctor (SkillBridge.Message.NItemInfo item) (at Assets/Scripts/Models/Item.cs:19)
-ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:15)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:221)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+2024-10-01 22:24:08,055 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-01 22:24:08,860 [ 1] INFO  Unity: OnUserLogin:Success [登录成功]
+2024-10-01 22:24:08,865 [ 1] INFO  Unity: LoadLevel: charChoose
+2024-10-01 22:24:09,784 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 22:24:09,790 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 22:24:17,091 [ 1] INFO  Unity: SendCharacterCreate::charName :www charClass:Archer
+2024-10-01 22:24:17,159 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2024-10-01 22:24:17,162 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 22:24:18,317 [ 1] INFO  Unity: Select Char:[3]www[Archer]
+2024-10-01 22:24:19,178 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
+2024-10-01 22:24:19,242 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-01 22:24:19,280 [ 1] INFO  Unity: =========Quests:1001 Quest
+2024-10-01 22:24:19,289 [ 1] INFO  Unity: =========Quests:3001 Quest
+2024-10-01 22:24:19,290 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-01 22:24:19,297 [ 1] INFO  Unity: AddCharacter:3:www Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-10-01 22:24:19,311 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-01 22:24:20,508 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 22:24:20,518 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
+You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
 }</args></log4net.Error>
-2024-05-22 13:16:31,327 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-05-22 13:16:31,328 [ 1] INFO  Unity: AddCharacter:1:lili Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-05-22 13:16:31,331 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-05-22 13:16:31,831 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-05-22 13:16:31,834 [ 1] WARN  Unity: MainPlayerCamera[40974] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-05-22 13:16:31,836 [ 1] WARN  Unity: UIWorldElementManager[41730] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-05-22 13:16:31,836 [ 1] WARN  Unity: UIMain[42340] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-05-22 13:16:31,837 [ 1] WARN  Unity: GameObjectManager[42352] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-05-22 13:16:35,344 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIBag+<InitBags>c__Iterator0.MoveNext () (at Assets/Scripts/UI/UIBag.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-UIBag:Start() (at Assets/Scripts/UI/UIBag.cs:24)
+2024-10-01 22:24:20,541 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
+You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
 }</args></log4net.Error>
-2024-05-22 13:17:04,401 [ 1] INFO  Unity: Character_1_lili OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-05-22 13:17:04,402 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-05-22 13:17:04,402 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-01 22:24:20,547 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
+You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
+}</args></log4net.Error>
+2024-10-01 22:24:20,554 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
+You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
+NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
+}</args></log4net.Error>
+2024-10-01 22:24:20,561 [ 1] WARN  Unity: MainPlayerCamera[152306] Start
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-10-01 22:24:20,566 [ 1] WARN  Unity: UIWorldElementManager[153062] Start
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-10-01 22:24:20,567 [ 1] WARN  Unity: UIMain[153672] Start
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-10-01 22:24:20,568 [ 1] WARN  Unity: GameObjectManager[153684] Start
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-10-01 22:24:26,066 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2024-10-01 22:24:26,067 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:0 
+2024-10-01 22:24:26,163 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2024-10-01 22:24:26,163 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(98,18,0) SPD:0 
+2024-10-01 22:24:26,246 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
+2024-10-01 22:24:26,247 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(94,35,0) SPD:0 
+2024-10-01 22:24:26,345 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
+2024-10-01 22:24:26,346 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(86,51,0) SPD:0 
+2024-10-01 22:24:26,444 [ 1] INFO  Unity: SetDirection:(58, 81, 0)
+2024-10-01 22:24:26,445 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(74,68,0) SPD:0 
+2024-10-01 22:24:26,527 [ 1] INFO  Unity: SetDirection:(43, 90, 0)
+2024-10-01 22:24:26,528 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(58,81,0) SPD:0 
+2024-10-01 22:24:26,626 [ 1] INFO  Unity: SetDirection:(26, 97, 0)
+2024-10-01 22:24:26,627 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(43,90,0) SPD:0 
+2024-10-01 22:24:26,808 [ 1] INFO  Unity: SetDirection:(9, 100, 0)
+2024-10-01 22:24:26,808 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(26,97,0) SPD:0 
+2024-10-01 22:24:27,007 [ 1] INFO  Unity: MoveForward
+2024-10-01 22:24:27,014 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(9,100,0) SPD:0 
+2024-10-01 22:24:27,024 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5001,4008,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,042 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5002,4016,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,057 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5003,4024,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,090 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5004,4032,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,107 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5005,4040,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,123 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5006,4048,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,140 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5007,4056,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,157 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5008,4064,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,173 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5009,4072,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,190 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5010,4080,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,207 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5011,4088,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,223 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5012,4096,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,240 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5013,4104,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,256 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5014,4112,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,273 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5015,4120,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,289 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5016,4128,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,306 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5017,4136,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,322 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5018,4144,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,339 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5019,4152,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,355 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5020,4160,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,372 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5021,4168,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,388 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5022,4176,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,405 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5023,4184,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,422 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5024,4192,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,439 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5025,4200,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,456 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5026,4208,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,472 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5027,4216,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,488 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5028,4224,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,504 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5029,4232,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,521 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5030,4240,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,538 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5031,4248,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,554 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5032,4256,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,571 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5033,4264,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,587 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5034,4272,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,588 [ 1] INFO  Unity: SetDirection:(-10, 100, 0)
+2024-10-01 22:24:27,588 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5034,4272,820) DIR:(9,100,0) SPD:500 
+2024-10-01 22:24:27,604 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5033,4280,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,621 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5032,4288,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,637 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5031,4296,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,654 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5030,4304,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,671 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5029,4312,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,688 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5028,4320,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,689 [ 1] INFO  Unity: SetDirection:(-28, 96, 0)
+2024-10-01 22:24:27,689 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5028,4320,820) DIR:(-10,100,0) SPD:500 
+2024-10-01 22:24:27,704 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5026,4328,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,721 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5024,4336,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,738 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5022,4344,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,756 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5020,4352,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,773 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5018,4360,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,790 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5016,4368,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,790 [ 1] INFO  Unity: SetDirection:(-45, 89, 0)
+2024-10-01 22:24:27,791 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5016,4368,820) DIR:(-28,96,0) SPD:500 
+2024-10-01 22:24:27,831 [ 1] INFO  Unity: Stop
+2024-10-01 22:24:27,831 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5012,4375,820) DIR:(-45,89,0) SPD:500 
+2024-10-01 22:24:27,980 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2024-10-01 22:24:27,984 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5012,4375,820) DIR:(-45,89,0) SPD:0 
+2024-10-01 22:24:44,850 [ 1] INFO  Unity: 当前点击NPC：莉莉丝
+2024-10-01 22:24:46,961 [ 1] INFO  Unity: sendQuestAccept
+2024-10-01 22:24:47,018 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Network.MessageDistributer`1[System.Object].RaiseEvent[QuestListResponse] (System.Object sender, SkillBridge.Message.QuestListResponse msg)
+Network.MessageDispatch`1[System.Object].Dispatch (System.Object sender, SkillBridge.Message.NetMessageResponse message)
+Network.MessageDistributer`1[System.Object].Distribute ()
+Network.NetClient.ProceeMessage () (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient.Update () (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2024-10-01 22:24:50,921 [ 1] INFO  Unity: 当前点击NPC：莉莉丝
+2024-10-01 22:24:54,848 [ 1] INFO  Unity: sendQuestAccept
+2024-10-01 22:24:54,881 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Network.MessageDistributer`1[System.Object].RaiseEvent[QuestListResponse] (System.Object sender, SkillBridge.Message.QuestListResponse msg)
+Network.MessageDispatch`1[System.Object].Dispatch (System.Object sender, SkillBridge.Message.NetMessageResponse message)
+Network.MessageDistributer`1[System.Object].Distribute ()
+Network.NetClient.ProceeMessage () (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient.Update () (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2024-10-01 22:25:29,234 [ 1] INFO  Unity: 当前点击NPC：莉莉丝
+2024-10-01 22:25:31,075 [ 1] INFO  Unity: sendQuestAccept
+2024-10-01 22:25:31,109 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Network.MessageDistributer`1[System.Object].RaiseEvent[QuestListResponse] (System.Object sender, SkillBridge.Message.QuestListResponse msg)
+Network.MessageDispatch`1[System.Object].Dispatch (System.Object sender, SkillBridge.Message.NetMessageResponse message)
+Network.MessageDistributer`1[System.Object].Distribute ()
+Network.NetClient.ProceeMessage () (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient.Update () (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2024-10-01 22:26:38,867 [ 1] INFO  Unity: SetDirection:(-45, 90, 0)
+2024-10-01 22:26:38,867 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5012,4375,820) DIR:(-60,80,0) SPD:0 
+2024-10-01 22:26:40,556 [ 1] INFO  Unity: MoveForward
+2024-10-01 22:26:40,556 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5012,4375,820) DIR:(-45,90,0) SPD:0 
+2024-10-01 22:26:40,573 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5008,4383,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,590 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5004,4391,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,606 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4399,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,622 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4996,4407,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,640 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4992,4415,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,656 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4988,4423,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,672 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4984,4431,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,690 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4980,4439,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,705 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4976,4447,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,722 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4972,4455,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,738 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4968,4463,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,756 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4964,4471,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,771 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4960,4479,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,788 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4956,4487,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,806 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4952,4495,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,821 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4948,4503,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,838 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4944,4511,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,854 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4940,4519,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,871 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4936,4527,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,890 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4932,4535,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,905 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4928,4543,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,921 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4924,4551,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,938 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4920,4559,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,954 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4916,4567,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,971 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4912,4575,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:40,988 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4908,4583,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:41,004 [ 1] INFO  Unity: Stop
+2024-10-01 22:26:41,005 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4904,4591,820) DIR:(-45,90,0) SPD:500 
+2024-10-01 22:26:43,506 [ 1] INFO  Unity: 当前点击NPC：莉莉丝
+2024-10-01 22:26:45,330 [ 1] INFO  Unity: sendQuestAccept
+2024-10-01 22:26:45,362 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Network.MessageDistributer`1[System.Object].RaiseEvent[QuestListResponse] (System.Object sender, SkillBridge.Message.QuestListResponse msg)
+Network.MessageDispatch`1[System.Object].Dispatch (System.Object sender, SkillBridge.Message.NetMessageResponse message)
+Network.MessageDistributer`1[System.Object].Distribute ()
+Network.NetClient.ProceeMessage () (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient.Update () (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2024-10-01 22:30:26,503 [ 1] INFO  Unity: 当前点击NPC：莉莉丝
+2024-10-01 22:30:27,894 [ 1] INFO  Unity: sendQuestAccept
+2024-10-01 22:30:27,940 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Network.MessageDistributer`1[System.Object].RaiseEvent[QuestListResponse] (System.Object sender, SkillBridge.Message.QuestListResponse msg)
+Network.MessageDispatch`1[System.Object].Dispatch (System.Object sender, SkillBridge.Message.NetMessageResponse message)
+Network.MessageDistributer`1[System.Object].Distribute ()
+Network.NetClient.ProceeMessage () (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient.Update () (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2024-10-01 22:31:12,593 [ 1] INFO  Unity: LoadLevel: charChoose
+2024-10-01 22:31:12,594 [ 1] INFO  Unity: UserGameLeaveRequest
+2024-10-01 22:31:12,709 [ 1] INFO  Unity: MapCharacterLeaveResponse:CharacterId:1
+2024-10-01 22:31:12,713 [ 1] INFO  Unity: RemoveCharacter:1
+2024-10-01 22:31:12,715 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2024-10-01 22:31:12,716 [ 1] INFO  Unity: Character_1_www OnDestroy :ID:1 POS:(4904, 4591, 820) DIR:(-45, 90, 0) SPD:0 
+2024-10-01 22:31:12,832 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 22:31:12,834 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 22:31:23,096 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-01 22:31:23,097 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

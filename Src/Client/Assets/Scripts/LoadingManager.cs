@@ -8,6 +8,7 @@ using SkillBridge.Message;
 using ProtoBuf;
 using Common;
 using Services;
+using Managers;
 
 public class LoadingManager : MonoBehaviour {
 
@@ -43,6 +44,7 @@ public class LoadingManager : MonoBehaviour {
         //Init basic services
         MapService.Instance.Init();
         UserService.Instance.Init();
+        ShopManager.Instance.Init();
 
 
         // Fake Loading Simulate

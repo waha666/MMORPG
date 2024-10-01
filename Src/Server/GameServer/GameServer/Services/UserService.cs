@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace GameServer.Services
 {
-    internal class UserSerevice: Singleton<UserSerevice>
+    internal class UserService: Singleton<UserService>
     {
-        public UserSerevice() 
+        public UserService() 
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
@@ -31,26 +31,23 @@ namespace GameServer.Services
         {
             Log.InfoFormat("UserRegisterRequest: User:{0}  Pass:{1}", request.User, request.Passward);
 
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
-            message.Response.userRegister = new UserRegisterResponse();
-
+          
+            sender.Session.Response.userRegister = new UserRegisterResponse();
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
             if (user != null)
             {
-                message.Response.userRegister.Result = Result.Failed;
-                message.Response.userRegister.Errormsg = "用户已存在.";
+                sender.Session.Response.userRegister.Result = Result.Failed;
+                sender.Session.Response.userRegister.Errormsg = "用户已存在.";
             }
             else
             {
                 TPlayer player = DBService.Instance.Entities.Players.Add(new TPlayer());
                 DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player });
                 DBService.Instance.Entities.SaveChanges();
-                message.Response.userRegister.Result = Result.Success;
-                message.Response.userRegister.Errormsg = "注册成功.";
+                sender.Session.Response.userRegister.Result = Result.Success;
+                sender.Session.Response.userRegister.Errormsg = "注册成功.";
             }
-            byte[] data = PackageHandler.PackMessage(message);
-            sender.SendData(data, 0, data.Length);
+            sender.SendResponse();
         }
 
         void OnLogin(NetConnection<NetSession> sender, UserLoginRequest request)
@@ -111,6 +108,8 @@ namespace GameServer.Services
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,
+                Gold = 10000,
+                Equips = new byte[28],
             };
             var bag = new TCharacterBag();
             bag.Owner = character;
@@ -155,12 +154,6 @@ namespace GameServer.Services
             sender.SendData(data, 0, data.Length);
             sender.Session.Character = character;
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
-
-            character.ItemManager.AddItem(1, 200);
-            character.ItemManager.AddItem(2, 100);
-            character.ItemManager.AddItem(3, 30);
-            character.ItemManager.AddItem(4, 120);
-            DBService.Instance.Save();
         }
 
         void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)

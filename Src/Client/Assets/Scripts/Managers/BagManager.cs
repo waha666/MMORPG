@@ -31,7 +31,8 @@ namespace Managers
             int i = 0;
             foreach (var kv in ItemManager.Instance.Items)
             {
-                if (kv.Value.Count <= kv.Value.Define.StackLimt)
+                if ( i>= this.Items.Length) break;
+                if (kv.Value.Count <= kv.Value.Define.StackLimit)
                 {
                     this.Items[i].ItemId = (ushort)kv.Key;
                     this.Items[i].Count = (ushort)kv.Value.Count;
@@ -39,12 +40,13 @@ namespace Managers
                 else
                 {
                     int count = kv.Value.Count;
-                    while (count > kv.Value.Define.StackLimt)
+                    while (count > kv.Value.Define.StackLimit)
                     {
+                        if (i >= this.Items.Length) break;
                         this.Items[i].ItemId = (ushort)kv.Key;
-                        this.Items[i].Count = (ushort)kv.Value.Define.StackLimt;
+                        this.Items[i].Count = (ushort)kv.Value.Define.StackLimit;
                         i++;
-                        count -= kv.Value.Define.StackLimt;
+                        count -= kv.Value.Define.StackLimit;
                     }
                     this.Items[i].ItemId = (ushort)kv.Key;
                     this.Items[i].Count = (ushort)count;
@@ -77,5 +79,42 @@ namespace Managers
             }
             return this.Info;
         }
+
+        public void AddItem(int itemId, int count) 
+        {
+            ushort addCount = (ushort)count;
+            for (int i = 0; i < this.Items.Length; i++) 
+            {
+                if (this.Items[i].ItemId == itemId) 
+                {
+                    ushort canAdd = (ushort)(DataManager.Instance.Items[itemId].StackLimit - this.Items[i].Count);
+                    if (canAdd >= count)
+                    {
+                        this.Items[i].Count += addCount;
+                        addCount = 0;
+                        break;
+                    }
+                    else 
+                    {
+                        this.Items[i].Count += canAdd;
+                        addCount -= canAdd;
+                    }
+                }
+            }
+            if (addCount > 0) 
+            {
+                for (int i = 0; i < this.Items.Length; i++) 
+                {
+                    if (this.Items[i].ItemId == 0) 
+                    {
+                        this.Items[i].ItemId = (ushort)itemId;
+                        this.Items[i].Count = addCount;
+                        break;
+                    }
+                }
+            } 
+        }
+
+        public void RemoveItem(int itemId, int count) { }
     }
 }
