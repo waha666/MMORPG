@@ -1,165 +1,78 @@
-2024-10-01 23:05:44,536 [ 1] INFO  Unity: LoadingManager start
-2024-10-01 23:05:44,548 [ 1] WARN  Unity: SceneManager[6580] Start
+2024-10-01 23:18:08,561 [ 1] INFO  Unity: LoadingManager start
+2024-10-01 23:18:08,582 [ 1] WARN  Unity: SceneManager[189932] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-01 23:05:47,649 [ 1] INFO  Unity: DataManager > DataManager()
-2024-10-01 23:05:55,702 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:qwe
-2024-10-01 23:05:55,703 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-10-01 23:05:55,707 [ 1] INFO  Unity: DoConnect
-2024-10-01 23:05:55,709 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-10-01 23:05:55,712 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-10-01 23:18:17,286 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:35)
+TabView+<Start>c__Iterator0.MoveNext () (at Assets/Scripts/UI/TabView/TabView.cs:24)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
+}</args></log4net.Error>
+2024-10-01 23:18:20,491 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-01 23:18:53,180 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:123
+2024-10-01 23:18:53,189 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-01 23:18:53,203 [ 1] INFO  Unity: DoConnect
+2024-10-01 23:18:53,204 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-01 23:18:53,218 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-10-01 23:05:55,716 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-10-01 23:05:55,822 [ 1] INFO  Unity: OnUserLogin:Failed [ÃÜÂë´íÎó]
-2024-10-01 23:05:59,668 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:qwe
-2024-10-01 23:05:59,701 [ 1] INFO  Unity: OnUserLogin:Failed [ÃÜÂë´íÎó]
-2024-10-01 23:06:05,433 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:qwe
-2024-10-01 23:06:05,467 [ 1] INFO  Unity: OnUserLogin:Failed [ÃÜÂë´íÎó]
-2024-10-01 23:06:14,498 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:qwe
-2024-10-01 23:06:14,529 [ 1] INFO  Unity: OnUserLogin:Failed [ÃÜÂë´íÎó]
-2024-10-01 23:06:23,062 [ 1] INFO  Unity: UserLoginRequest::user :user001 psw:123
-2024-10-01 23:06:23,111 [ 1] INFO  Unity: OnUserLogin:Success [µÇÂ¼³É¹¦]
-2024-10-01 23:06:23,112 [ 1] INFO  Unity: LoadLevel: charChoose
-2024-10-01 23:06:23,336 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-01 23:06:23,340 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
-2024-10-01 23:06:25,305 [ 1] INFO  Unity: Select Char:[4]cccc[Warrior]
-2024-10-01 23:06:25,504 [ 1] INFO  Unity: Select Char:[4]cccc[Warrior]
-2024-10-01 23:06:27,393 [ 1] INFO  Unity: UserGameEnterRequest::characterId :3
-2024-10-01 23:06:27,438 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-10-01 23:06:27,447 [ 1] INFO  Unity: =========Quests:1001 Quest
-2024-10-01 23:06:27,449 [ 1] INFO  Unity: =========Quests:1002 Quest
-2024-10-01 23:06:27,451 [ 1] INFO  Unity: =========Quests:3001 Quest
-2024-10-01 23:06:27,451 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-10-01 23:06:27,453 [ 1] INFO  Unity: AddCharacter:4:cccc Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-10-01 23:06:27,456 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-10-01 23:06:28,034 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-01 23:06:28,044 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+2024-10-01 23:18:53,231 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-01 23:18:54,066 [ 1] INFO  Unity: OnUserLogin:Success [µÇÂ¼³É¹¦]
+2024-10-01 23:18:54,072 [ 1] INFO  Unity: LoadLevel: charChoose
+2024-10-01 23:18:54,320 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 23:18:54,326 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 23:18:59,432 [ 1] INFO  Unity: SendCharacterCreate::charName :ddd charClass:Wizard
+2024-10-01 23:18:59,503 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2024-10-01 23:18:59,507 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
+2024-10-01 23:19:00,576 [ 1] INFO  Unity: Select Char:[5]ddd[Wizard]
+2024-10-01 23:19:00,841 [ 1] INFO  Unity: Select Char:[5]ddd[Wizard]
+2024-10-01 23:19:01,404 [ 1] INFO  Unity: UserGameEnterRequest::characterId :4
+2024-10-01 23:19:01,453 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-01 23:19:01,488 [ 1] INFO  Unity: =========Quests:1001 Quest
+2024-10-01 23:19:01,496 [ 1] INFO  Unity: =========Quests:3001 Quest
+2024-10-01 23:19:01,497 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-01 23:19:01,507 [ 1] INFO  Unity: AddCharacter:5:ddd Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-10-01 23:19:01,522 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-01 23:19:02,174 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-01 23:19:08,397 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
 NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
 NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
 }</args></log4net.Error>
-2024-10-01 23:06:28,050 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+2024-10-01 23:19:52,279 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
 NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
 NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
 }</args></log4net.Error>
-2024-10-01 23:06:28,052 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+2024-10-01 23:19:53,269 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
 NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
 NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
 }</args></log4net.Error>
-2024-10-01 23:06:28,053 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
+2024-10-01 23:19:54,139 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:56)
 NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
 NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
 }</args></log4net.Error>
-2024-10-01 23:06:28,055 [ 1] WARN  Unity: MainPlayerCamera[174620] Start
+2024-10-01 23:19:54,148 [ 1] WARN  Unity: MainPlayerCamera[199884] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-01 23:06:28,055 [ 1] WARN  Unity: UIWorldElementManager[175376] Start
+2024-10-01 23:19:54,151 [ 1] WARN  Unity: UIWorldElementManager[200640] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-01 23:06:28,057 [ 1] WARN  Unity: UIMain[175986] Start
+2024-10-01 23:19:54,152 [ 1] WARN  Unity: UIMain[201250] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-01 23:06:28,058 [ 1] WARN  Unity: GameObjectManager[175998] Start
+2024-10-01 23:19:54,152 [ 1] WARN  Unity: GameObjectManager[201262] Start
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-01 23:06:50,497 [ 1] INFO  Unity: LoadLevel: charChoose
-2024-10-01 23:06:50,497 [ 1] INFO  Unity: UserGameLeaveRequest
-2024-10-01 23:06:50,634 [ 1] INFO  Unity: MapCharacterLeaveResponse:CharacterId:3
-2024-10-01 23:06:50,638 [ 1] INFO  Unity: RemoveCharacter:3
-2024-10-01 23:06:50,641 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2024-10-01 23:06:50,646 [ 1] INFO  Unity: Character_3_cccc OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-10-01 23:06:50,691 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-01 23:06:50,694 [ 1] INFO  Unity: Select Char:[1]wada[Archer]
-2024-10-01 23:06:51,483 [ 1] INFO  Unity: Select Char:[4]cccc[Warrior]
-2024-10-01 23:06:52,459 [ 1] INFO  Unity: UserGameEnterRequest::characterId :3
-2024-10-01 23:06:52,493 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-10-01 23:06:52,494 [ 1] INFO  Unity: =========Quests:1001 Quest
-2024-10-01 23:06:52,494 [ 1] INFO  Unity: =========Quests:1002 Quest
-2024-10-01 23:06:52,495 [ 1] INFO  Unity: =========Quests:3001 Quest
-2024-10-01 23:06:52,495 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-10-01 23:06:52,497 [ 1] INFO  Unity: AddCharacter:4:cccc Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-10-01 23:06:52,498 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-10-01 23:06:53,107 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-01 23:08:07,495 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
-NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
-NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
-}</args></log4net.Error>
-2024-10-01 23:08:10,875 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
-NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
-NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
-}</args></log4net.Error>
-2024-10-01 23:08:20,236 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
-NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
-NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
-}</args></log4net.Error>
-2024-10-01 23:08:25,677 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{UnassignedReferenceException: The variable npcStatusPrefab of UIWorldElementManager has not been assigned.
-You probably need to assign the npcStatusPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:264)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:300)
-UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at C:/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:295)
-UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:54)
-NpcContoller.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcContoller.cs:35)
-NpcContoller.Start () (at Assets/Scripts/GameObject/NpcContoller.cs:28)
-}</args></log4net.Error>
-2024-10-01 23:08:25,683 [ 1] WARN  Unity: MainPlayerCamera[179492] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-10-01 23:08:25,683 [ 1] WARN  Unity: UIWorldElementManager[180248] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-10-01 23:08:25,684 [ 1] WARN  Unity: UIMain[180858] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-10-01 23:08:25,685 [ 1] WARN  Unity: GameObjectManager[180870] Start
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-10-01 23:08:29,500 [ 1] INFO  Unity: Character_4_cccc OnDestroy :ID:4 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-10-01 23:08:29,504 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-10-01 23:08:29,504 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-01 23:20:11,770 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-01 23:20:11,771 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2024-10-01 23:20:11,779 [ 1] INFO  Unity: Character_1_ddd OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
